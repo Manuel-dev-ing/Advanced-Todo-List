@@ -1,0 +1,271 @@
+*, *:before, *:after{
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+    font-family: "Open Sans", serif;
+}
+
+/* utilidades */
+
+.text-sm{
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.text-md{
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.btn-black{
+  border: none;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  padding: .6rem .7rem;
+  border-radius: .3rem;
+}
+
+.btn-black:hover{
+  background-color: black;
+  color: white;
+  padding: .6rem .7rem;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+/* parrfos */
+.line{
+  text-decoration: line-through;
+}
+
+
+/* alerts */
+.alert-danger{
+  color:#721c24;
+  background-color:#fac6ca;
+  padding: .8rem;
+  font-weight: 600;
+}
+.alert-success{
+  border-color:#c3e6cb;
+  color: #155724;
+  background-color: #d4edda;
+  padding: .8rem;
+  font-weight: 600;
+} 
+
+
+/* borders */
+.border-danger{
+  border: 1px solid #f23d4f;
+}
+
+.border{
+    border: 1px solid;
+}
+
+/* inputs */
+input{
+    padding: .5rem;
+    border-radius: .3rem;
+    border: 1px solid #bfbfbf;
+}
+input:focus{
+    border: 2px solid #bfbfbf;
+    outline: none;
+}
+
+select{
+    padding: .4rem;
+    border-radius: .2rem;
+    border: 1px solid #bfbfbf;
+}
+
+select:focus{
+    border: 2px solid #bfbfbf;
+    outline: none;
+}
+
+/* margins */
+
+.mt-10{
+    margin-top: 1rem;
+}
+.mt-5{
+    margin-top: .5rem;
+}
+
+.mb-5{
+  margin-bottom: .5rem;
+}
+
+
+/* listas */
+li{
+  list-style: none;
+}
+
+
+/* badges */
+.badge-blue{
+  background-color: #4154f1;
+  color: white;
+  padding: .1rem .8rem .2rem .8rem;
+  border-radius: .8rem;
+  width: 4rem;
+  text-align: center;
+}
+
+.badge-green{
+  background-color: green;
+  color: white;
+  padding: .1rem .8rem .2rem .8rem;
+  border-radius: .8rem;
+  width: 4rem;
+  text-align: center;
+}
+
+.badge-yellow{
+  background-color: #ffc107;
+  color: black;
+  padding: .1rem .8rem .2rem .8rem;
+  border-radius: .8rem;
+  width: 4rem;
+  text-align: center;
+}
+
+.badge-red{
+  background-color: rgb(212, 2, 2);
+  color: white;
+  padding: .1rem .8rem .2rem .8rem;
+  border-radius: .8rem;
+  width: 4.8rem;
+  text-align: center;
+}
+
+
+/* estilos */
+
+.header__menu{
+    background-color: black;
+    color: white;
+    padding: .8rem;
+}
+
+.header__titulo{
+    font-size: 1rem;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+/* section nueva tarea */
+.nuevatarea__nuevotitulo{
+    width: 27rem;
+}
+
+/* section listado de tareas */
+.listadotareas__tarea{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .7rem;
+  border-radius: .5rem;
+  border: 1px solid #bfbfbf;
+}
+
+.listadotareas__titulo{
+  width: 25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.listadotareas__atributos{
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  justify-content: space-around;
+}
+
+.listadotareas__acciones{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 8rem;
+
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.bi-grip-vertical{
+  cursor: move;
+}
+
+.listadotareas{
+  height: 53vh;
+  overflow-y: auto;
+  scrollbar-color: #000000 white;
+  scrollbar-width: thin;
+}
+
+
+
+
+/* xs */
+@media (min-width: 475px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  /* sm */
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  /* lg */
+  /* @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  
+  }
+   */
+  /* xl */
+  /* @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+   */
+  /* 2xl */
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+
+
+
